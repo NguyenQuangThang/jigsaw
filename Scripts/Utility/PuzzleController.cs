@@ -423,24 +423,24 @@ public class PuzzleController : MonoBehaviour
     /// <param name="i"></param>
     public void ActivePiece()
     {
-        GameManager.Instance.countPiece += 5;
-        for (int i = 0; i < pieces.Length; i++)
-        {
-            pieces[i].transform.gameObject.SetActive(false);
-        }
-        if ((pieces.Length - GameManager.Instance.countPiece) > 5)
-        {
-            for (int i = pieces.Length - 1; i >= (pieces.Length - GameManager.Instance.countPiece); i--)
-            {
-                pieces[i].transform.gameObject.SetActive(true);
-            }
-        } else
-        {
-            for (int i = pieces.Length - 1; i >= 0; i--)
-            {
-                pieces[i].transform.gameObject.SetActive(true);
-            }
-        }    
+        //GameManager.Instance.countPiece += 5;
+        //for (int i = 0; i < pieces.Length; i++)
+        //{
+        //    pieces[i].transform.gameObject.SetActive(false);
+        //}
+        //if ((pieces.Length - GameManager.Instance.countPiece) > 5)
+        //{
+        //    for (int i = pieces.Length - 1; i >= (pieces.Length - GameManager.Instance.countPiece); i--)
+        //    {
+        //        pieces[i].transform.gameObject.SetActive(true);
+        //    }
+        //} else
+        //{
+         //   for (int i = pieces.Length - 1; i >= 0; i--)
+         //   {
+        //        pieces[i].transform.gameObject.SetActive(true);
+        //    }
+       // }    
         //for (int i = GameManager.Instance.countPiece; i < (GameManager.Instance.countPiece + 4); i++)
         //{
         //    pieces[i].transform.gameObject.SetActive(false);
